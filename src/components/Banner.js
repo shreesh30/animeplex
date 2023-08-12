@@ -8,13 +8,19 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://wallpaperaccess.com/full/712390.jpg")`,
+        backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black_flag.svg/1200px-Black_flag.svg.png")`,
         backgroundPosition: "center center",
       }}
     >
-      <div className="banner-contents flex flex-col">
-        <h1 className="banner-title">Title</h1>
-        <div className="flex flex-row">
+      <div className="banner-contents flex flex-col mx-5 justify-center h-full p-10">
+        <h1 className="banner-title my-5 text-4xl font-bold">Title</h1>
+        <h1 className="banner-description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </h1>
+        <div className="flex space-x-2 my-5">
           <Button>
             <FaPlay />
             <h3>Play</h3>
@@ -25,7 +31,6 @@ function Banner() {
             <h3>My List</h3>
           </Button>
         </div>
-        <h1>Text description of the movie</h1>
       </div>
     </header>
   );
